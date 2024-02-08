@@ -64,10 +64,10 @@ Be sur to have access to k8s cluster and helm installed
 Edit values.yaml file to match your specification
 
 ```bash
-$ helm install \<release_name\> \-n  \<namespace_name\> \-f deploy/helm/values.yaml deploy/helm/.
+$ helm install <release_name> -n  <namespace_name> -f deploy/helm/values.yaml deploy/helm/.
 
 # exemple
-$ helm install tsaramaso \-n  tsaramaso \-f deploy/helm/values.yaml deploy/helm/.
+$ helm install tsaramaso -n  tsaramaso -f deploy/helm/values.yaml deploy/helm/.
 ```
 
 ## Support
