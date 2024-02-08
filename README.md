@@ -58,6 +58,18 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Deploy to K8S with helm
+
+Be sur to have access to k8s cluster and helm installed  
+Edit values.yaml file to match your specification
+
+```bash
+$ helm install \<release_name\> \-n  \<namespace_name\> \-f deploy/helm/values.yaml deploy/helm/.
+
+# exemple
+$ helm install tsaramaso \-n  tsaramaso \-f deploy/helm/values.yaml deploy/helm/.
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
